@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+body {
+  height: 1200px;
+  background: hsl(275, 100%, 97%);
+}
+
+.bg-img {
+  width: 100vw;
+  height: 10%;
+}
+
+.container {
+  margin: auto;
+  z-index: 2;
+  position: absolute;
+  line-height: 25px;
+  color: hsl(292, 16%, 49%);
+}
+
+h1 {
+  color: hsl(292, 42%, 14%);
+  font-weight: 700;
+  font-size: 1.8rem;
+  width: 50%;
+  height: auto;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+
+.q1,
+.q2,
+.q3,
+.q4 {
+  color: hsl(292, 42%, 14%);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 85px;
+  margin-bottom: 10px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.answer {
+  font-weight: 500;
+  padding-bottom: 20px;
+  border-bottom: 0.5px solid rgba(140, 105, 145, 0.2);
+}
+
+.q1:hover,
+.q2:hover,
+.q3:hover,
+.q4:hover {
+  color: hsl(281, 83%, 54%);
+  cursor: pointer;
+}
+
+.icon:active {
+  content: url(assets/images/icon-plus.svg);
+}
+.last {
+  border: 0 white;
+}
+
+.item1 {
+  height: 80px;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 375px) {
+  .bg-img {
+    content: url(assets/images/background-pattern-mobile.svg);
+    width: 100vw;
+    height: 5%;
+    position: relative;
+  }
+
+  .container {
+    top: 23%;
+    left: 4.5%;
+    padding: 20px;
+    width: 90vw;
+    height: 1050px;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .head {
+    width: 100%;
+    height: 50px;
+  }
+
+  .head img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 900px) {
+  .bg-img {
+    content: url(assets/images/background-pattern-desktop.svg);
+    width: 100vw;
+    height: 30%;
+  }
+
+  .container {
+    top: 10%;
+    width: 60vw;
+    left: 17%;
+    height: auto;
+  }
+
+  .answer {
+    font-size: 13px;
+  }
+
+  .q1,
+  .q2,
+  .q3,
+  .q4 {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1440px) {
+  .container {
+    top: 25%;
+    width: 45%;
+    height: auto;
+    left: 27%;
+  }
+
+  .bg-img {
+    content: url(assets/images/background-pattern-desktop.svg);
+  }
+}

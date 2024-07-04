@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "DM Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: hsl(27, 66%, 92%);
+  margin-top: 10%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.total {
+  background: hsl(10, 79%, 65%);
+  width: 90%;
+  height: auto;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  max-width: 400px;
+}
+
+.total img {
+  width: 45px;
+}
+
+.total h4 {
+  color: hsl(27, 66%, 92%);
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.total h4 span {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.data-container {
+  background: hsl(33, 100%, 98%);
+  width: 90%;
+  height: auto;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  max-width: 400px;
+}
+
+.data-container h2 {
+  color: hsl(25, 47%, 15%);
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+.data {
+  width: 90%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.month-total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  border-top: 2px solid rgba(147, 134, 123, 0.1);
+}
+
+.month-total p {
+  color: rgb(147, 134, 123);
+  font-size: 12px;
+  line-height: 25px;
+}
+
+.month-total p span {
+  color: hsl(25, 47%, 15%);
+  font-weight: 700;
+  position: relative;
+}
+
+.month-total p:last-child {
+  margin-top: 40px;
+}
+
+.amount {
+  font-size: 2rem;
+  left: 0;
+  top: 8px;
+}
+
+.percent {
+  font-size: 0.9rem;
+  top: 5px;
+  left: 45px;
+}
+
+.data {
+  display: grid;
+  gap: 10px 5px;
+  justify-items: center;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  width: 100%;
+  height: 180px;
+  margin-bottom: 20px;
+}
+
+.box {
+  background: hsl(10, 79%, 65%);
+  width: 30px;
+  border-radius: 3px;
+  grid-row-end: 12;
+}
+
+.data h6 {
+  grid-row: 12;
+  color: rgba(147, 134, 123, 0.8);
+  font-weight: 400;
+}
+
+.box1 {
+  grid-row-start: 8;
+}
+
+.box2 {
+  grid-row-start: 6;
+}
+
+.box3 {
+  grid-row-start: 3;
+  background: hsl(186, 34%, 60%);
+}
+
+.box4 {
+  grid-row-start: 6;
+  grid-row-end: span 1.5;
+}
+
+.box5 {
+  grid-row-start: 8;
+}
+
+.box6 {
+  grid-row-start: 5;
+}
+
+.box7 {
+  grid-row-start: 7;
+}
+
+@media screen and (min-width: 600px) {
+  .box {
+    width: 35px;
+  }
+}
