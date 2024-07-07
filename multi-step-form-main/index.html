@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Multi-step form</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="all">
+      <section class="sidebar">
+        <div>
+          <button>1</button>
+          <p>Step 1 <br /><span>Your info</span></p>
+        </div>
+        <div>
+          <button>2</button>
+          <p>Step 2 <br /><span>Select plan</span></p>
+        </div>
+        <div>
+          <button>3</button>
+          <p>Step 3 <br /><span>Add-ons</span></p>
+        </div>
+        <div>
+          <button>4</button>
+          <p>Step 4 <br /><span>Summary</span></p>
+        </div>
+      </section>
+      <section class="page-container">
+        <div class="page1">
+          <h2>Personal info</h2>
+          <p>Please provide your name, email address, and phone number.</p>
+          <div class="questions">
+            <label for="">Name</label>
+            <input type="text" placeholder="e.g. Stephen King" /> <br />
+            <label for="">Email Address</label>
+            <input type="email" placeholder="e.g. stephenking@lorem.com" />
+            <br />
+            <label for="">Phone Number</label>
+            <input type="text" placeholder="e.g. +1 234 567 890" />
+          </div>
+        </div>
+        <div class="page2">
+          <h2>Select your plan</h2>
+          <p>You have the option of monthly or yearly billing.</p>
+          <div class="plans">
+            <div>
+              <img src="assets/images/icon-arcade.svg" alt="" />
+              <div>
+                <h6>Arcade</h6>
+                <p>$9/mo</p>
+              </div>
+            </div>
+            <div>
+              <img src="assets/images/icon-advanced.svg" alt="" />
+              <div>
+                <h6>Advanced</h6>
+                <p>$12/mo</p>
+              </div>
+            </div>
+            <div>
+              <img src="assets/images/icon-pro.svg" alt="" />
+              <div>
+                <h6>Pro</h6>
+                <p>$15/mo</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <span id="monthly">Monthly</span> <span id="yearly">Yearly</span>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <button id="back">Go Back</button>
+        <button id="next">Next Step</button>
+      </footer>
+    </div>
+
+    <!-- Step 2 start -->
+
+    <!--  
+        Monthly Yearly Go Back Next Step-->
+
+    <!-- Step 2 end -->
+
+    <!-- Step 3 start -->
+
+    <!--Pick add-ons Add-ons help enhance your gaming experience. Online service
+    Access to multiplayer games +$1/mo Larger storage Extra 1TB of cloud save
+    +$2/mo Customizable Profile Custom theme on your profile +$2/mo Go Back Next
+    Step-->
+
+    <!-- Step 3 end -->
+
+    <!-- Step 4 start -->
+
+    <!--Finishing up Double-check everything looks OK before confirming.-->
+
+    <!-- Dynamically add subscription and add-on selections here -->
+
+    <!--Total (per month/year) Go Back Confirm-->
+
+    <!-- Step 4 end -->
+
+    <!-- Step 5 start -->
+
+    <!--Thank you! Thanks for confirming your subscription! We hope you have fun
+    using our platform. If you ever need support, please feel free to email us
+    at support@loremgaming.com.-->
+
+    <!-- Step 5 end -->
+  </body>
+</html>

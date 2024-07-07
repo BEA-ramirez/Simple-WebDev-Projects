@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsl(217, 100%, 97%);
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.sidebar {
+  width: 100%;
+  height: 15rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(assets/images/bg-sidebar-mobile.svg);
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 10rem;
+}
+
+.sidebar div button {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.sidebar div button:hover {
+  background: white;
+  color: black;
+}
+.sidebar div p {
+  display: none;
+}
+
+.page-container {
+  background: white;
+  z-index: 2;
+  margin: 0 1rem;
+  position: absolute;
+  top: 10rem;
+  width: 95%;
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+  border: 1px solid rgba(214, 217, 230, 0.8);
+  box-shadow: 0 0.3rem 8px rgb(214, 217, 230);
+}
+
+.page-container div h2 {
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+  color: hsl(213, 96%, 18%);
+}
+
+.page-container div p {
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  margin-bottom: 2rem;
+  color: hsl(231, 11%, 63%);
+}
+
+.questions label {
+  font-size: 1.4rem;
+  color: hsl(213, 96%, 18%);
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.questions input:not(:nth-child(3)) {
+  margin-bottom: 1.5rem;
+}
+
+.questions input {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  outline: none;
+  border: 1px solid hsl(229, 24%, 87%);
+  border-radius: 0.5rem;
+}
+
+::-webkit-input-placeholder {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: hsl(231, 11%, 63%);
+}
+
+footer {
+  background-color: white;
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem 0 2rem;
+}
+
+#next {
+  background-color: hsl(213, 96%, 18%);
+  color: hsl(229, 24%, 87%);
+  font-weight: 500;
+  padding: 1rem 1.5rem;
+  border: none;
+  outline: none;
+  border-radius: 0.3rem;
+}
+
+#back {
+  background-color: hsl(217, 100%, 97%);
+  outline: none;
+  border: none;
+  padding: 0.5rem;
+  color: hsl(231, 11%, 63%);
+  font-weight: 800;
+}
+
+.page1 {
+  display: none;
+}
+
+.plans {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.plans > div {
+  width: 100%;
+  border: 1px solid hsl(229, 24%, 87%);
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  margin-bottom: 1rem;
+  gap: 1.2rem;
+}
+
+.plans div img {
+  width: 40px;
+  height: 40px;
+}
+
+.plans div div h6 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  position: relative;
+  top: 1rem;
+  color: hsl(213, 96%, 18%);
+}
+
+.plans div div p {
+  font-size: 1.4rem;
+  top: 1.3rem;
+  font-weight: 500;
+  position: relative;
+  color: hsl(231, 11%, 63%);
+}
+
+.page2 > div:last-child {
+  width: 100%;
+  height: 4.5rem;
+  background-color: hsl(217, 100%, 97%);
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page2 > div:last-child span {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: hsl(213, 96%, 18%);
+}
