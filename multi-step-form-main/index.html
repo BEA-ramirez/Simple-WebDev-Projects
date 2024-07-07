@@ -13,7 +13,10 @@
     />
 
     <title>Frontend Mentor | Multi-step form</title>
-
+    <script
+      src="https://kit.fontawesome.com/91b2f3020f.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -36,76 +39,118 @@
           <p>Step 4 <br /><span>Summary</span></p>
         </div>
       </section>
-      <section class="page-container">
-        <div class="page1">
-          <h2>Personal info</h2>
-          <p>Please provide your name, email address, and phone number.</p>
-          <div class="questions">
-            <label for="">Name</label>
-            <input type="text" placeholder="e.g. Stephen King" /> <br />
-            <label for="">Email Address</label>
-            <input type="email" placeholder="e.g. stephenking@lorem.com" />
-            <br />
-            <label for="">Phone Number</label>
-            <input type="text" placeholder="e.g. +1 234 567 890" />
+      <section class="mobile-container">
+        <section class="page-container">
+          <div class="page1">
+            <h2>Personal info</h2>
+            <p>Please provide your name, email address, and phone number.</p>
+            <div class="questions">
+              <label for="">Name</label>
+              <input type="text" placeholder="e.g. Stephen King" /> <br />
+              <label for="">Email Address</label>
+              <input type="email" placeholder="e.g. stephenking@lorem.com" />
+              <br />
+              <label for="">Phone Number</label>
+              <input type="text" placeholder="e.g. +1 234 567 890" />
+            </div>
           </div>
-        </div>
-        <div class="page2">
-          <h2>Select your plan</h2>
-          <p>You have the option of monthly or yearly billing.</p>
-          <div class="plans">
-            <div>
-              <img src="assets/images/icon-arcade.svg" alt="" />
+          <div class="page2">
+            <h2>Select your plan</h2>
+            <p>You have the option of monthly or yearly billing.</p>
+            <div class="plans">
               <div>
-                <h6>Arcade</h6>
+                <img src="assets/images/icon-arcade.svg" alt="" />
+                <div>
+                  <h6>Arcade</h6>
+                  <p>$9/mo</p>
+                </div>
+              </div>
+              <div>
+                <img src="assets/images/icon-advanced.svg" alt="" />
+                <div>
+                  <h6>Advanced</h6>
+                  <p>$12/mo</p>
+                </div>
+              </div>
+              <div>
+                <img src="assets/images/icon-pro.svg" alt="" />
+                <div>
+                  <h6>Pro</h6>
+                  <p>$15/mo</p>
+                </div>
+              </div>
+            </div>
+            <div class="mmYY">
+              <span id="monthly">Monthly </span>
+              <div id="toggle">
+                <div></div>
+              </div>
+              <span id="yearly"> Yearly</span>
+            </div>
+          </div>
+          <div class="page3">
+            <h2>Pick add-ons</h2>
+            <p>Add-ons help enhance your gaming experience.</p>
+            <div class="add-ons">
+              <div>
+                <i class="fa-solid fa-square-check"></i>
+                <h3>
+                  Online service
+                  <p>Access to multiplayer games</p>
+                </h3>
+                <p>+$1/mo</p>
+              </div>
+              <div>
+                <i class="fa-solid fa-square-check"></i>
+                <h3>
+                  Larger storage
+                  <p>Extra 1TB of cloud save</p>
+                </h3>
+                <p>+$2/mo</p>
+              </div>
+              <div>
+                <i class="fa-solid fa-square-check"></i>
+                <h3>
+                  Customizable Profile
+                  <p>Custom theme on your profile</p>
+                </h3>
+                <p>+$2/mo</p>
+              </div>
+            </div>
+          </div>
+          <div class="page4">
+            <h2>Finishing up</h2>
+            <p>Double-check everything looks OK before confirming.</p>
+            <div class="costs">
+              <div class="subscription">
+                <h4>
+                  Arcade(Monthly)
+                  <p>Change</p>
+                </h4>
                 <p>$9/mo</p>
               </div>
-            </div>
-            <div>
-              <img src="assets/images/icon-advanced.svg" alt="" />
-              <div>
-                <h6>Advanced</h6>
-                <p>$12/mo</p>
+              <div class="services">
+                <p>Online service <span>+$1/mo</span></p>
+                <p id="last">Larger storage <span>+$2/mo</span></p>
               </div>
             </div>
-            <div>
-              <img src="assets/images/icon-pro.svg" alt="" />
-              <div>
-                <h6>Pro</h6>
-                <p>$15/mo</p>
-              </div>
+            <div class="total">
+              <p>Total(per month)</p>
+              <p>+$12/mo</p>
             </div>
           </div>
-          <div>
-            <span id="monthly">Monthly</span> <span id="yearly">Yearly</span>
-          </div>
-        </div>
+        </section>
+        <footer>
+          <button id="back">Go Back</button>
+          <button id="next">Next Step</button>
+        </footer>
+      </div>
       </section>
-      <footer>
-        <button id="back">Go Back</button>
-        <button id="next">Next Step</button>
-      </footer>
-    </div>
-
-    <!-- Step 2 start -->
-
-    <!--  
-        Monthly Yearly Go Back Next Step-->
-
-    <!-- Step 2 end -->
-
-    <!-- Step 3 start -->
-
-    <!--Pick add-ons Add-ons help enhance your gaming experience. Online service
-    Access to multiplayer games +$1/mo Larger storage Extra 1TB of cloud save
-    +$2/mo Customizable Profile Custom theme on your profile +$2/mo Go Back Next
-    Step-->
-
-    <!-- Step 3 end -->
+      
 
     <!-- Step 4 start -->
 
-    <!--Finishing up Double-check everything looks OK before confirming.-->
+    <!-- -->
 
     <!-- Dynamically add subscription and add-on selections here -->
 
