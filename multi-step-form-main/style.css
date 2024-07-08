@@ -120,15 +120,17 @@ footer {
   border: none;
   outline: none;
   border-radius: 0.3rem;
+  cursor: pointer;
 }
 
 #back {
-  background-color: hsl(217, 100%, 97%);
+  background-color: hsl(231, 100%, 99%);
   outline: none;
   border: none;
   padding: 0.5rem;
   color: hsl(231, 11%, 63%);
   font-weight: 800;
+  cursor: pointer;
 }
 
 .plans {
@@ -239,10 +241,11 @@ footer {
   color: white;
   background-color: white;
   font-size: 2rem;
-  border: 1px solid hsl(232, 8%, 63%);
-  border-radius: 5px;
-  width: 2rem;
-  height: 2rem;
+  border: none;
+  outline: 1px solid hsl(229, 24%, 87%);
+  border-radius: 2px;
+  width: 1.8rem;
+  height: 1.8rem;
 }
 
 .add-ons div h3 {
@@ -265,12 +268,6 @@ footer {
   position: absolute;
   right: 1.5rem;
   top: 1.5rem;
-}
-
-.page2,
-.page3,
-.page4 {
-  display: none;
 }
 
 .costs {
@@ -348,12 +345,19 @@ footer {
   justify-content: center;
 }
 
-@media screen and (min-width: 600px) {
+.page2,
+.page3,
+.page4 {
+  display: none;
+}
+
+@media screen and (min-width: 1300px) {
   body {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
   }
 
   .all {
@@ -389,6 +393,19 @@ footer {
     margin-bottom: 2rem;
   }
 
+  .sidebar div p {
+    text-transform: uppercase;
+    color: hsl(231, 11%, 63%);
+    padding-top: 0.3rem;
+  }
+
+  .sidebar div p span {
+    color: hsl(229, 24%, 87%);
+    font-weight: 600;
+    display: block;
+    margin-top: 0.3rem;
+  }
+
   .page-container {
     width: 60%;
     position: absolute;
@@ -396,6 +413,66 @@ footer {
     left: 30rem;
     border: none;
     box-shadow: none;
+  }
+
+  .page1 .questions input {
+    margin-bottom: 2rem;
+  }
+  .page-container .page1 > p {
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+  }
+
+  .page-container .page1 > h2 {
+    margin-bottom: 1rem;
+  }
+
+  .plans {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  .plans div {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding-top: 2rem;
+  }
+
+  .page-container .page2 > p {
+    margin-bottom: 3rem;
+    font-size: 1.6rem;
+  }
+
+  .page-container .page3 > p {
+    margin-bottom: 3rem;
+    font-size: 1.6rem;
+  }
+
+  .page-container .page3 > h2 {
+    margin-bottom: 1rem;
+  }
+
+  .page3 .add-ons i {
+    font-size: 1.7rem;
+    border: none;
+    outline: 1px solid hsl(229, 24%, 87%);
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 3px;
+  }
+
+  .page3 .add-ons i:hover {
+    color: brown;
+  }
+
+  .page-container .page4 > p {
+    margin-bottom: 3rem;
+    font-size: 1.6rem;
+  }
+  .page-container .page4 > h2 {
+    margin-bottom: 1rem;
   }
 
   footer {
