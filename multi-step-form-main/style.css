@@ -40,10 +40,6 @@ body {
   cursor: pointer;
 }
 
-.sidebar div button:hover {
-  background: white;
-  color: black;
-}
 .sidebar div p {
   display: none;
 }
@@ -92,6 +88,21 @@ body {
   outline: none;
   border: 1px solid hsl(229, 24%, 87%);
   border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.questions input:focus {
+  border-color: hsl(243, 100%, 62%);
+}
+
+.error::after {
+  content: "This field is required";
+  position: absolute;
+  right: 2rem;
+  color: hsl(354, 84%, 57%);
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 ::-webkit-input-placeholder {
@@ -107,7 +118,6 @@ footer {
   position: absolute;
   bottom: 0;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 0 2rem 0 2rem;
 }
@@ -121,6 +131,13 @@ footer {
   outline: none;
   border-radius: 0.3rem;
   cursor: pointer;
+  position: absolute;
+  right: 2rem;
+}
+
+#next:hover {
+  background-color: hsl(213, 76%, 24%);
+  color: hsl(231, 100%, 99%);
 }
 
 #back {
@@ -131,6 +148,8 @@ footer {
   color: hsl(231, 11%, 63%);
   font-weight: 800;
   cursor: pointer;
+  position: absolute;
+  left: 2rem;
 }
 
 .plans {
@@ -149,11 +168,16 @@ footer {
   padding: 0.5rem 2rem;
   margin-bottom: 1rem;
   gap: 1.2rem;
+  cursor: pointer;
 }
 
 .plans div img {
   width: 40px;
   height: 40px;
+}
+
+.plans .clicked {
+  border-color: hsl(243, 100%, 62%);
 }
 
 .plans div div h6 {
@@ -209,7 +233,7 @@ footer {
   transition: all 0.5s ease;
 }
 
-#toggle div:active {
+#toggle .move {
   transform: translateX(2rem);
 }
 
@@ -231,6 +255,10 @@ footer {
   padding: 1rem;
   gap: 2rem;
   position: relative;
+}
+
+.add-ons div:focus {
+  border-color: hsl(243, 100%, 62%);
 }
 
 .add-ons div:not(:last-child) {
@@ -345,6 +373,27 @@ footer {
   justify-content: center;
 }
 
+.page5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page5 img {
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 2.5rem;
+  margin-top: 4rem;
+}
+
+.page-container .page5 p {
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 0 1rem 5rem 1.1rem;
+}
+
+.page5,
 .page2,
 .page3,
 .page4 {
@@ -461,10 +510,15 @@ footer {
     width: 1.5rem;
     height: 1.5rem;
     border-radius: 3px;
+    cursor: pointer;
   }
 
-  .page3 .add-ons i:hover {
-    color: brown;
+  .page3 .add-ons .check i {
+    color: hsl(243, 100%, 62%);
+  }
+
+  .page3 .add-ons .check {
+    border-color: hsl(243, 100%, 62%);
   }
 
   .page-container .page4 > p {
